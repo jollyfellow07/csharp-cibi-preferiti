@@ -28,9 +28,10 @@ for (int i = 0; i < cibiPreferiti.Length; i++) { //stampo la mia classifica
         classifica++;
     
 }
-
-int numero = 0; //dichiaro una variabile int per calcolare la posizione media del mio array
-    if (cibiPreferiti.Length % 2 == 0)  //se è un numero pari allora stampiamo i due cibi che si tovano nel mezzo, poichè non c'è un unico valore medio
+//dichiaro una variabile int per calcolare la posizione media del mio array
+int numero = 0;
+//se è un numero pari allora stampiamo i due cibi che si tovano nel mezzo, poichè non c'è un unico valore medio
+if (cibiPreferiti.Length % 2 == 0)  
     {
         numero = cibiPreferiti.Length / 2;
         Console.WriteLine("Questi sono i cibi situati nel mezzo della mia classifica: " + cibiPreferiti[numero -1] + " e " + cibiPreferiti[numero]) ;
